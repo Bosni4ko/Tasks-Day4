@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Task1 {
      public static void main(String[] args) {
@@ -13,5 +14,12 @@ public class Task1 {
         colors.add(0,"orange");
 
          colors.forEach(System.out::println);
+
+         List<String> colorsSublist =  colors.subList(2,5);
+         System.out.println();
+         for (String i : colorsSublist){
+             System.out.println(i);
+         }
+
     }
 }
